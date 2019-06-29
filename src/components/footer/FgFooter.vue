@@ -26,6 +26,7 @@ export default {
         text-align: center;
         width: 20rem;
         margin: 3rem auto 0;
+        display: grid;
         
         
 
@@ -44,7 +45,7 @@ export default {
         }
 
         .arrow {
-            display: block;
+            display: inline-block;
             width: fit-content;
             margin: 1rem auto 0;
             transform: rotate(-90deg);
