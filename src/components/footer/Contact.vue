@@ -1,5 +1,5 @@
 <template>
-    <form id="contact" @submit="checkForm" novalidate method="POST" action="https://formspree.io/guerinfelix08@gmail.com">
+    <form id="contact" @submit="checkForm" method="POST" action="https://formspree.io/guerinfelix08@gmail.com" novalidate>
         <h2>Contact</h2>
         <label for="name">Nom</label>
         <input type="text" id="name" v-model="name" name="Name">
@@ -47,7 +47,6 @@ export default {
             return reg.test(email);
         },
         checkForm(e) {
-            e.preventDefault();
             this.nameError = this.name ? false : true;
             this.noEmail = this.email ? false : true;
             this.emailError = this.validateMail(this.email) ? false : true;
@@ -57,6 +56,7 @@ export default {
                 this.messageSent = true;
                 return true;
             } else {
+                e.preventDefault();
                 return false;
             }
         }
