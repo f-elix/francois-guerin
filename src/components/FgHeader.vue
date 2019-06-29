@@ -7,13 +7,13 @@
     <nav role="primary" class="nav">
         <ul>
             <li>
-                <a href="#parutions">Parutions</a>  
+                <a href="#parutions" @click="scrollTo" @keyup.enter="scrollTo">Parutions</a>  
             </li>
             <li>
-                <a href="#bio">Biographie</a>              
+                <a href="#bio" @click="scrollTo" @keyup.enter="scrollTo">Biographie</a>              
             </li>
             <li>
-                <a href="#contact">Contact</a>
+                <a href="#contact" @click="scrollTo" @keyup.enter="scrollTo">Contact</a>
             </li>  
         </ul>
     </nav> 
@@ -23,7 +23,14 @@
 
 <script>
 export default {
-
+  methods: {
+    scrollTo(event) {
+      const idValue = event.target.getAttribute('href');
+      document.querySelector(idValue).scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  }
 }
 </script>
 
