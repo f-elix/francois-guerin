@@ -19,7 +19,7 @@
         <small class="form-error" v-if="messageError">Vous devez écrire un message.</small>
         <button type="submit">Envoyer</button>
         <p class="success" v-if="messageSent">Votre message a bien été envoyé!</p>
-        <input type="hidden" name="_subject" value="francoisguerin.com">
+        <input type="hidden" name="_subject" value="francoisguerin.me">
         <input type="text" name="_gotcha" style="display:none" />
     </form>
 </template>
@@ -62,8 +62,6 @@ export default {
         }
     }
 }
-
-// action="https://formspree.io/guerinfelix08@gmail.com"
 </script>
 
 
