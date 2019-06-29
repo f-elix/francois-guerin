@@ -5,7 +5,7 @@
         <hr>
         <p><a href="http://www.jcl.qc.ca/" target="_blank" class="jcl-link">Éditions JCL</a></p>
         <small>François Guérin copyright 2019</small>
-        <a class="arrow" tabindex="0" href="#accueil">&#10146;</a>
+        <a class="arrow" tabindex="0" href="#accueil" @click="scrollTo" @keyup.enter="scrollTo">&#10146;</a>
     </div>
 </footer>
 </template>
@@ -16,6 +16,13 @@ import Contact from './Contact.vue'
 export default {
     components: {
         'fg-contact': Contact
+    },
+    methods: {
+    scrollTo(event) {
+        const idValue = event.target.getAttribute('href');
+        document.querySelector(idValue).scrollIntoView({
+        behavior: 'smooth'
+    });
     }
 }
 </script>
