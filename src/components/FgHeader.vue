@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header id="accueil">
     <div class="title">
         <h1>François Guérin</h1>
         <h2>Auteur</h2>
@@ -17,17 +17,13 @@
             </li>  
         </ul>
     </nav> 
-    <a class="arrow" tabindex="0" @click="goToMenu" @keyup.enter="goToMenu">&#10146;</a>
+    <a class="arrow" tabindex="0" href="#parutions">&#10146;</a>
   </header>
 </template>
 
 <script>
 export default {
-  methods: {
-    goToMenu() {
-      window.scrollBy(0, window.innerHeight);
-    }
-  }
+
 }
 </script>
 

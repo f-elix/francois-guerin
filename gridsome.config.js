@@ -23,7 +23,7 @@ module.exports = {
 			addStyleResource(config.module.rule('scss').oneOf(type));
 		});
 	},
-	siteName: 'François Guérin - Auteur',
+	siteName: 'Auteur',
 	siteDescription:
 		"François Guérin est un prolifique auteur Montréalais. Avec plusieurs romans à son actif, il aborde divers aspects de l'être humain à travers d'incroyables histoires et personnages!",
 	siteUrl: 'https://www.francoisguerin.com',

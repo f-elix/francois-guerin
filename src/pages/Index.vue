@@ -16,6 +16,9 @@ export default {
       'fg-header': FgHeader,
       'fg-main': FgMain,
       'fg-footer': FgFooter
+    },
+    metaInfo: {
+      title: 'François Guérin'
     }
 }
 </script>
