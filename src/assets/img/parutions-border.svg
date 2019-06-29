@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="177.195" height="94.032" viewBox="0 0 177.195 94.032">
+  <g id="Group_20" data-name="Group 20" transform="translate(-47 -13)">
+    <g id="Group_3" data-name="Group 3" transform="translate(47.12 13)">
+      <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(0 0)" fill="rgba(255,255,255,0)" stroke="#202020" stroke-width="1">
+        <rect width="8.42" height="8.42" stroke="none"/>
+        <rect x="0.5" y="0.5" width="7.42" height="7.42" fill="none"/>
+      </g>
+      <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(1.904 1.904)" fill="rgba(255,255,255,0)" stroke="#202020" stroke-width="1">
+        <rect width="4.611" height="4.611" stroke="none"/>
+        <rect x="0.5" y="0.5" width="3.611" height="3.611" fill="none"/>
+      </g>
+    </g>
+    <g id="Group_16" data-name="Group 16" transform="translate(47 13.101)">
+      <g id="Group_14" data-name="Group 14">
+        <g id="Group_11" data-name="Group 11" transform="translate(10.415 83.322)">
+          <g id="Group_9" data-name="Group 9">
+            <line id="Line_1" data-name="Line 1" x2="156.229" transform="translate(0 9.895)" fill="none" stroke="#202020" stroke-width="1"/>
+            <line id="Line_3" data-name="Line 3" y2="10.415" transform="translate(156.229)" fill="none" stroke="#202020" stroke-width="1"/>
+            <line id="Line_7" data-name="Line 7" y2="10.415" fill="none" stroke="#202020" stroke-width="1"/>
+          </g>
+        </g>
+        <g id="Group_10" data-name="Group 10" transform="translate(0 9.374)">
+          <line id="Line_8" data-name="Line 8" y2="74.469" transform="translate(0.521)" fill="none" stroke="#202020" stroke-width="1"/>
+          <line id="Line_9" data-name="Line 9" x1="10.415" transform="translate(0 74.469)" fill="none" stroke="#202020" stroke-width="1"/>
+          <line id="Line_10" data-name="Line 10" x1="10.415" transform="translate(0 0.521)" fill="none" stroke="#202020" stroke-width="1"/>
+        </g>
+        <g id="Group_13" data-name="Group 13" transform="translate(10.415)">
+          <g id="Group_9-2" data-name="Group 9" transform="translate(156.229 10.415) rotate(180)">
+            <line id="Line_1-2" data-name="Line 1" x2="156.229" transform="translate(0 9.895)" fill="none" stroke="#202020" stroke-width="1"/>
+            <line id="Line_3-2" data-name="Line 3" y2="10.415" transform="translate(156.229)" fill="none" stroke="#202020" stroke-width="1"/>
+            <line id="Line_7-2" data-name="Line 7" y2="10.415" fill="none" stroke="#202020" stroke-width="1"/>
+          </g>
+        </g>
+        <g id="Group_12" data-name="Group 12" transform="translate(166.645 9.895)">
+          <line id="Line_8-2" data-name="Line 8" y2="74.469" transform="translate(9.895 74.469) rotate(180)" fill="none" stroke="#202020" stroke-width="1"/>
+          <line id="Line_9-2" data-name="Line 9" x1="10.415" transform="translate(10.415 0) rotate(180)" fill="none" stroke="#202020" stroke-width="1"/>
+          <line id="Line_10-2" data-name="Line 10" x1="10.415" transform="translate(10.415 73.949) rotate(180)" fill="none" stroke="#202020" stroke-width="1"/>
+        </g>
+      </g>
+      <g id="Group_15" data-name="Group 15" transform="translate(3.645 3.645)">
+        <g id="Group_11-2" data-name="Group 11" transform="translate(9.496 76.951)">
+          <g id="Group_9-3" data-name="Group 9">
+            <line id="Line_1-3" data-name="Line 1" x2="150.777" transform="translate(0 9.021)" fill="none" stroke="#202020" stroke-width="1"/>
+            <line id="Line_3-3" data-name="Line 3" y2="9.496" transform="translate(150.777)" fill="none" stroke="#202020" stroke-width="1"/>
+            <line id="Line_7-3" data-name="Line 7" y2="9.496" fill="none" stroke="#202020" stroke-width="1"/>
+          </g>
+        </g>
+        <g id="Group_10-2" data-name="Group 10" transform="translate(0 8.547)">
+          <line id="Line_8-3" data-name="Line 8" y2="68.879" transform="translate(0.475)" fill="none" stroke="#202020" stroke-width="1"/>
+          <line id="Line_9-3" data-name="Line 9" x1="9.496" transform="translate(0 68.879)" fill="none" stroke="#202020" stroke-width="1"/>
+          <line id="Line_10-3" data-name="Line 10" x1="9.496" transform="translate(0 0.475)" fill="none" stroke="#202020" stroke-width="1"/>
+        </g>
+        <g id="Group_13-2" data-name="Group 13" transform="translate(9.496)">
+          <g id="Group_9-4" data-name="Group 9" transform="translate(150.777 9.496) rotate(180)">
+            <line id="Line_1-4" data-name="Line 1" x2="150.777" transform="translate(0 9.021)" fill="none" stroke="#202020" stroke-width="1"/>
+            <line id="Line_3-4" data-name="Line 3" y2="9.496" transform="translate(150.777)" fill="none" stroke="#202020" stroke-width="1"/>
+            <line id="Line_7-4" data-name="Line 7" y2="9.496" fill="none" stroke="#202020" stroke-width="1"/>
+          </g>
+        </g>
+        <g id="Group_12-2" data-name="Group 12" transform="translate(160.273 9.021)">
+          <line id="Line_8-4" data-name="Line 8" y2="68.879" transform="translate(9.021 68.879) rotate(180)" fill="none" stroke="#202020" stroke-width="1"/>
+          <line id="Line_9-4" data-name="Line 9" x1="9.496" transform="translate(9.496 0) rotate(180)" fill="none" stroke="#202020" stroke-width="1"/>
+          <line id="Line_10-4" data-name="Line 10" x1="9.496" transform="translate(9.496 68.404) rotate(180)" fill="none" stroke="#202020" stroke-width="1"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_17" data-name="Group 17" transform="translate(215.775 98.612)">
+      <g id="Rectangle_1-2" data-name="Rectangle 1" transform="translate(0 0)" fill="rgba(255,255,255,0)" stroke="#202020" stroke-width="1">
+        <rect width="8.42" height="8.42" stroke="none"/>
+        <rect x="0.5" y="0.5" width="7.42" height="7.42" fill="none"/>
+      </g>
+      <g id="Rectangle_2-2" data-name="Rectangle 2" transform="translate(1.904 1.904)" fill="rgba(255,255,255,0)" stroke="#202020" stroke-width="1">
+        <rect width="4.611" height="4.611" stroke="none"/>
+        <rect x="0.5" y="0.5" width="3.611" height="3.611" fill="none"/>
+      </g>
+    </g>
+    <g id="Group_18" data-name="Group 18" transform="translate(215.775 13)">
+      <g id="Rectangle_1-3" data-name="Rectangle 1" transform="translate(0 0)" fill="rgba(255,255,255,0)" stroke="#202020" stroke-width="1">
+        <rect width="8.42" height="8.42" stroke="none"/>
+        <rect x="0.5" y="0.5" width="7.42" height="7.42" fill="none"/>
+      </g>
+      <g id="Rectangle_2-3" data-name="Rectangle 2" transform="translate(1.904 1.904)" fill="rgba(255,255,255,0)" stroke="#202020" stroke-width="1">
+        <rect width="4.611" height="4.611" stroke="none"/>
+        <rect x="0.5" y="0.5" width="3.611" height="3.611" fill="none"/>
+      </g>
+    </g>
+    <g id="Group_19" data-name="Group 19" transform="translate(47.12 98.612)">
+      <g id="Rectangle_1-4" data-name="Rectangle 1" transform="translate(0 0)" fill="rgba(255,255,255,0)" stroke="#202020" stroke-width="1">
+        <rect width="8.42" height="8.42" stroke="none"/>
+        <rect x="0.5" y="0.5" width="7.42" height="7.42" fill="none"/>
+      </g>
+      <g id="Rectangle_2-4" data-name="Rectangle 2" transform="translate(1.904 1.904)" fill="rgba(255,255,255,0)" stroke="#202020" stroke-width="1">
+        <rect width="4.611" height="4.611" stroke="none"/>
+        <rect x="0.5" y="0.5" width="3.611" height="3.611" fill="none"/>
+      </g>
+    </g>
+    <g id="Rectangle_3" data-name="Rectangle 3" transform="translate(59.951 91.016)" fill="rgba(255,255,255,0)" stroke="#202020" stroke-width="1">
+      <rect width="3.059" height="3.059" stroke="none"/>
+      <rect x="0.5" y="0.5" width="2.059" height="2.059" fill="none"/>
+    </g>
+    <g id="Rectangle_4" data-name="Rectangle 4" transform="translate(208.06 91.016)" fill="rgba(255,255,255,0)" stroke="#202020" stroke-width="1">
+      <rect width="3.059" height="3.059" stroke="none"/>
+      <rect x="0.5" y="0.5" width="2.059" height="2.059" fill="none"/>
+    </g>
+    <g id="Rectangle_5" data-name="Rectangle 5" transform="translate(208.06 25.842)" fill="rgba(255,255,255,0)" stroke="#202020" stroke-width="1">
+      <rect width="3.059" height="3.059" stroke="none"/>
+      <rect x="0.5" y="0.5" width="2.059" height="2.059" fill="none"/>
+    </g>
+    <g id="Rectangle_6" data-name="Rectangle 6" transform="translate(59.951 25.842)" fill="rgba(255,255,255,0)" stroke="#202020" stroke-width="1">
+      <rect width="3.059" height="3.059" stroke="none"/>
+      <rect x="0.5" y="0.5" width="2.059" height="2.059" fill="none"/>
+    </g>
+  </g>
+</svg>
