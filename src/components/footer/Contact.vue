@@ -1,5 +1,5 @@
 <template>
-    <form id="contact" @submit="checkForm" novalidate method="POST" action="//formspree.io/guerinfelix08@gmail.com">
+    <form id="contact" @submit="checkForm" novalidate method="POST" action="https://formspree.io/guerinfelix08@gmail.com">
         <h2>Contact</h2>
         <label for="name">Nom</label>
         <input type="text" id="name" v-model="name" name="Name">
