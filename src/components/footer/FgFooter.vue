@@ -18,11 +18,12 @@ export default {
         'fg-contact': Contact
     },
     methods: {
-    scrollTo(event) {
-        const idValue = event.target.getAttribute('href');
-        document.querySelector(idValue).scrollIntoView({
-        behavior: 'smooth'
-    });
+        scrollTo(event) {
+            const idValue = event.target.getAttribute('href');
+            document.querySelector(idValue).scrollIntoView({
+            behavior: 'smooth'
+            });
+        }
     }
 }
 </script>
