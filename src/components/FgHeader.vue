@@ -4,7 +4,7 @@
         <h1>François Guérin</h1>
         <h2>Auteur</h2>
     </div>
-    <nav role="primary" class="nav">
+    <nav class="nav">
         <ul>
             <li>
                 <a href="#parutions" @click="scrollTo" @keyup.enter="scrollTo">Parutions</a>  

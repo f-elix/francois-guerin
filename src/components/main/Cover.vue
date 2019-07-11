@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-    <g-image :src="require('../../assets/img/' + book.source + '.jpg')"></g-image>
+    <g-image :src="require('../../assets/img/' + book.source + '.jpg')" :alt="book.alt"></g-image>
     <p>({{book.releaseYear}})</p>
 </div>
 </template>

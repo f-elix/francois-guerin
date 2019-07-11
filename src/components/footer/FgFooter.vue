@@ -3,7 +3,7 @@
     <fg-contact></fg-contact>
     <div class="meta">
         <hr>
-        <p><a href="http://www.jcl.qc.ca/" target="_blank" class="jcl-link">Éditions JCL</a></p>
+        <p><a href="http://www.jcl.qc.ca/" target="_blank" rel="noreferrer" class="jcl-link">Éditions JCL</a></p>
         <small>François Guérin copyright 2019</small>
         <a class="arrow" tabindex="0" href="#accueil" @click="scrollTo" @keyup.enter="scrollTo">&#10146;</a>
     </div>
