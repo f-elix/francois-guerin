@@ -1,6 +1,6 @@
 # François Guérin
 
-Url: [francoisguerin.me](francoisguerin.me)
+Url: [francoisguerin.me](https://francoisguerin.me)
 
 A simple page presenting the work of Montreal author François Guérin.
 
