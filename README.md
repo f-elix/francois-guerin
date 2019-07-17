@@ -1,7 +1,7 @@
 # François Guérin
 
-![Francois Guerin header] (https://raw.githubusercontent.com/f-elix/francois-guerin/master/design/fgmenu.jpg)
-![Francois Guerin main] (https://raw.githubusercontent.com/f-elix/francois-guerin/master/design/fgmain.JPG)
+![Francois Guerin header](https://raw.githubusercontent.com/f-elix/francois-guerin/master/design/fgmenu.jpg)
+![Francois Guerin main](https://raw.githubusercontent.com/f-elix/francois-guerin/master/design/fgmain.JPG)
 
 ## What is it?
 
@@ -27,11 +27,11 @@ Users can:
 
 ## Sources
 
-- [Vue.js Docs] (https://vuejs.org/v2/guide/)
-- [Gridsome Docs] (https://gridsome.org/docs)
-- [Netlify Docs] (https://www.netlify.com/docs/)
-- [Team Treehouse] (https://teamtreehouse.com)
-- [MDN] (https://developer.mozilla.org/en-US/docs/Web) 
-- [W3 School] (https://www.w3schools.com/)
+- [Vue.js Docs](https://vuejs.org/v2/guide/)
+- [Gridsome Docs](https://gridsome.org/docs)
+- [Netlify Docs](https://www.netlify.com/docs/)
+- [Team Treehouse](https://teamtreehouse.com)
+- [MDN](https://developer.mozilla.org/en-US/docs/Web) 
+- [W3 School](https://www.w3schools.com/)
 
 Coded by Felix Guerin
