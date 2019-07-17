@@ -1,5 +1,7 @@
 # François Guérin
 
+Url: [francoisguerin.me](francoisguerin.me)
+
 A simple page presenting the work of Montreal author François Guérin.
 
 I made this page primarily to practice some new skills. I used the following technologies:
