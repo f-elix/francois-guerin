@@ -1,6 +1,5 @@
 # François Guérin
 
-![Francois Guerin header](https://raw.githubusercontent.com/f-elix/francois-guerin/master/design/fgmenu.jpg)
 ![Francois Guerin main](https://raw.githubusercontent.com/f-elix/francois-guerin/master/design/fgmain.JPG)
 
 ## What is it?
