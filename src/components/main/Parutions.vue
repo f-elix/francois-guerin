@@ -3,9 +3,9 @@
     <h2>Parutions</h2>
         <div class="wrapper">
             <div class="no-margin" v-for="book in books" :key="book.isbn" >
-                <fg-cover :book="book" @click.native="showText(book)"></fg-cover> 
+                <fg-cover :book="book" @click.native="showText(book)" @keypress.enter.native="showText(book)"></fg-cover> 
                 <transition name="show">
-                    <fg-synopsis :book="book" v-if="book.synopsisShown" @click.native="closeText(book)"></fg-synopsis>
+                    <fg-synopsis :book="book" v-if="book.synopsisShown" @click.native="closeText(book)" @keypress.enter.native="closeText(book)" tabindex="0"></fg-synopsis>
                 </transition>
             </div>
         </div>
