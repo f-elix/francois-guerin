@@ -1,16 +1,37 @@
 # François Guérin
 
-A simple page presenting the work of Montreal author François Guérin.
+![Francois Guerin main](https://raw.githubusercontent.com/f-elix/francois-guerin/master/design/fgmain.JPG)
 
-I made this page primarily to practice some new skills. I used the following technologies:
+## What is it?
+
+A simple page presenting the work of french-canadian Montreal author François Guérin. The page is in french. Enjoy it, and I highly recommend reading the books!
+
+I made this page primarily to practice some new skills. 
+
+Users can:
+- Click on the book covers to display the synopsis;
+- Contact the author via the contact form at the bottom of the page.
+
+## Technologies
 
 - CSS3 / Sass;
 - HTML5;
 - Vue js;
 - Gridsome (as a static site generator);
 - Formspree for the contact form;
+- Git & Git Bash;
+- VSCode;
 - Deployed on Netlify.
 
-Overkill? Absolutely. But it was good practice!
 
-Enjoy the page, and I highly recommend reading the books presented on it.
+## Sources
+
+- [Vue JS 2 - The Complete Guide (incl. Vue Router & Vuex)](https://www.udemy.com/vuejs-2-the-complete-guide/)
+- [Vue.js docs](https://vuejs.org/v2/guide/)
+- [Gridsome docs](https://gridsome.org/docs)
+- [Netlify docs](https://www.netlify.com/docs/)
+- [Team Treehouse](https://teamtreehouse.com)
+- [MDN](https://developer.mozilla.org/en-US/docs/Web) 
+- [W3 School](https://www.w3schools.com/)
+
+Coded by Felix Guerin
