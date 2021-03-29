@@ -1,5 +1,4 @@
-const { tailwindExtractor } = require("tailwindcss/lib/lib/purgeUnusedStyles");
-
+const { tailwindExtractor } = require('tailwindcss/lib/lib/purgeUnusedStyles');
 
 const screenExceptions = ['touch', 'pointer'];
 
@@ -16,18 +15,18 @@ const except = (exceptions, object) => {
 
 module.exports = {
 	purge: {
-		content: [
-			"./src/**/*.{html,js,svelte,ts}",
-		],
+		content: ['./src/**/*.{html,js,svelte,ts}'],
 		options: {
 			defaultExtractor: (content) => [
 				// If this stops working, please open an issue at https://github.com/svelte-add/tailwindcss/issues rather than bothering Tailwind Labs about it
 				...tailwindExtractor(content),
 				// Match Svelte class: directives (https://github.com/tailwindlabs/tailwindcss/discussions/1731)
-				...[...content.matchAll(/(?:class:)*([\w\d-/:%.]+)/gm)].map(([_match, group, ..._rest]) => group),
+				...[...content.matchAll(/(?:class:)*([\w\d-/:%.]+)/gm)].map(
+					([_match, group, ..._rest]) => group
+				)
 			],
-			keyframes: true,
-		},
+			keyframes: true
+		}
 	},
 	darkMode: 'class',
 	theme: {
@@ -46,31 +45,7 @@ module.exports = {
 			touch: { raw: '(hover: none)' },
 			pointer: { raw: '(any-hover: hover)' }
 		},
-		colors: {
-			transparent: 'transparent',
-			current: 'currentColor',
-			black: {
-				DEFAULT: '#000000',
-				80: 'rgba(0, 0, 0, 0.8)',
-				60: 'rgba(0, 0, 0, 0.6)',
-				50: 'rgba(0, 0, 0, 0.5)',
-				40: 'rgba(0, 0, 0, 0.4)',
-				30: 'rgba(0, 0, 0, 0.3)',
-				20: 'rgba(0, 0, 0, 0.2)',
-				10: 'rgba(0, 0, 0, 0.1)'
-			},
-			white: {
-				DEFAULT: '#FFFFFF',
-				pure: '#FFFFFF',
-				80: 'rgba(255, 255, 255, 0.8)',
-				60: 'rgba(255, 255, 255, 0.6)',
-				50: 'rgba(255, 255, 255, 0.5)',
-				40: 'rgba(255, 255, 255, 0.4)',
-				30: 'rgba(255, 255, 255, 0.3)',
-				20: 'rgba(255, 255, 255, 0.2)',
-				10: 'rgba(255, 255, 255, 0.1)'
-			},
-		},
+
 		spacing: (theme) => ({
 			0: '0',
 			'1px': '1px',
@@ -169,21 +144,21 @@ module.exports = {
 		fontFamily: {
 			base: ['Anonymous Pro', 'Arial', 'sans-serif']
 		},
-		fontSize: {
-			10: ['14rem', '1.4'],
-			20: ['16rem', '1.4'],
-			30: ['18rem', '1.4'],
-			40: ['21rem', '1.4'],
-			50: ['24rem', '1.3'],
-			60: ['26rem', '1.3'],
-			70: ['32rem', '1.2'],
-			80: ['40rem', '1.1'],
-			90: ['48rem', '1.1'],
-			100: ['60rem', '1.3'],
-			105: ['80rem', '1'],
-			108: ['100rem', '1'],
-			110: ['120rem', '1'],
-		},
+		fontSize: (theme) => ({
+			10: ['14rem', `${theme('lineHeight.40')}`],
+			20: ['16rem', `${theme('lineHeight.40')}`],
+			30: ['18rem', `${theme('lineHeight.40')}`],
+			40: ['21rem', `${theme('lineHeight.40')}`],
+			50: ['24rem', `${theme('lineHeight.30')}`],
+			60: ['26rem', `${theme('lineHeight.30')}`],
+			70: ['32rem', `${theme('lineHeight.20')}`],
+			80: ['40rem', `${theme('lineHeight.10')}`],
+			90: ['48rem', `${theme('lineHeight.10')}`],
+			100: ['60rem', `${theme('lineHeight.30')}`],
+			110: ['80rem', `${theme('lineHeight.0')}`],
+			120: ['100rem', `${theme('lineHeight.0')}`],
+			130: ['120rem', `${theme('lineHeight.0')}`]
+		}),
 		lineHeight: {
 			0: '1.0',
 			10: '1.1',
@@ -222,8 +197,33 @@ module.exports = {
 				'3/4': '75%',
 				full: '100%'
 			},
+			colors: {
+				transparent: 'transparent',
+				current: 'currentColor',
+				black: {
+					DEFAULT: '#000000',
+					80: 'rgba(0, 0, 0, 0.8)',
+					60: 'rgba(0, 0, 0, 0.6)',
+					50: 'rgba(0, 0, 0, 0.5)',
+					40: 'rgba(0, 0, 0, 0.4)',
+					30: 'rgba(0, 0, 0, 0.3)',
+					20: 'rgba(0, 0, 0, 0.2)',
+					10: 'rgba(0, 0, 0, 0.1)'
+				},
+				white: {
+					DEFAULT: '#FFFFFF',
+					pure: '#FFFFFF',
+					80: 'rgba(255, 255, 255, 0.8)',
+					60: 'rgba(255, 255, 255, 0.6)',
+					50: 'rgba(255, 255, 255, 0.5)',
+					40: 'rgba(255, 255, 255, 0.4)',
+					30: 'rgba(255, 255, 255, 0.3)',
+					20: 'rgba(255, 255, 255, 0.2)',
+					10: 'rgba(255, 255, 255, 0.1)'
+				}
+			},
 			backgroundColor: (theme) => ({
-				main: theme('colors.white'),
+				main: theme('colors.gray.200'),
 				'main-reverse': theme('colors.black')
 			}),
 			textColor: (theme) => ({
@@ -236,11 +236,11 @@ module.exports = {
 			}),
 			transitionTimingFunction: {
 				'out-expo': 'cubic-bezier(0.19, 1, 0.22, 1)'
-			},
+			}
 		}
 	},
 	variants: {
-		extend: {},
+		extend: {}
 	},
 	plugins: [require('postcss-focus-visible')]
 };
