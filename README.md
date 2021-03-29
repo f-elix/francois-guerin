@@ -1,37 +1,42 @@
-# François Guérin
+# create-svelte
 
-![Francois Guerin main](https://raw.githubusercontent.com/f-elix/francois-guerin/master/design/fgmain.JPG)
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
 
-## What is it?
+## Creating a project
 
-A simple page presenting the work of french-canadian Montreal author François Guérin. The page is in french. Enjoy it, and I highly recommend reading the books!
+If you're seeing this, you've probably already done this step. Congrats!
 
-I made this page primarily to practice some new skills. 
+```bash
+# create a new project in the current directory
+npm init svelte@next
 
-Users can:
-- Click on the book covers to display the synopsis;
-- Contact the author via the contact form at the bottom of the page.
+# create a new project in my-app
+npm init svelte@next my-app
+```
 
-## Technologies
+> Note: the `@next` is temporary
 
-- CSS3 / Sass;
-- HTML5;
-- Vue js;
-- Gridsome (as a static site generator);
-- Formspree for the contact form;
-- Git & Git Bash;
-- VSCode;
-- Deployed on Netlify.
+## Developing
 
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-## Sources
+```bash
+npm run dev
 
-- [Vue JS 2 - The Complete Guide (incl. Vue Router & Vuex)](https://www.udemy.com/vuejs-2-the-complete-guide/)
-- [Vue.js docs](https://vuejs.org/v2/guide/)
-- [Gridsome docs](https://gridsome.org/docs)
-- [Netlify docs](https://www.netlify.com/docs/)
-- [Team Treehouse](https://teamtreehouse.com)
-- [MDN](https://developer.mozilla.org/en-US/docs/Web) 
-- [W3 School](https://www.w3schools.com/)
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
 
-Coded by Felix Guerin
+## Building
+
+Svelte apps are built with _adapters_, which optimise your project for deployment to different environments.
+
+By default, `npm run build` will generate a Node app that you can run with `node build`. To use a different adapter, add it to the `devDependencies` in `package.json` making sure to specify the version as `next` and update your `svelte.config.cjs` to [specify your chosen adapter](https://kit.svelte.dev/docs#configuration-adapter). The following official adapters are available:
+
+- [@sveltejs/adapter-node](https://github.com/sveltejs/kit/tree/master/packages/adapter-node)
+- [@sveltejs/adapter-static](https://github.com/sveltejs/kit/tree/master/packages/adapter-static)
+- [@sveltejs/adapter-netlify](https://github.com/sveltejs/kit/tree/master/packages/adapter-netlify)
+- [@sveltejs/adapter-vercel](https://github.com/sveltejs/kit/tree/master/packages/adapter-vercel)
+- ...more soon
+
+[See the adapter documentation for more detail](https://kit.svelte.dev/docs#adapters)
