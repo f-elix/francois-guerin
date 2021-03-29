@@ -1,0 +1,27 @@
+{
+	"global": {
+		"siteTitle": "François Guérin"
+	},
+	"header": {
+		"links": [
+			{
+				"label": "Parutions",
+				"url": "parutions"
+			},
+			{
+				"label": "Biographie",
+				"url": "bio"
+			},
+			{
+				"label": "Contact",
+				"url": "contact"
+			}
+		]
+	},
+	"footer": {
+		"jclLink": {
+			"label": "Éditions JCL",
+			"url": "https://www.jcl.qc.ca/"
+		}
+	}
+}

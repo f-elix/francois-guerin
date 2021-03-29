@@ -39,6 +39,7 @@ html {
 
 	-webkit-font-smoothing: antialiased;
 	-webkit-tap-highlight-color: transparent;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -91,4 +92,26 @@ address {
 input {
 	-webkit-appearance: none !important;
 	appearance: none !important;
+}
+
+@layer utilities {
+	._focus-default {
+		@apply focus:outline-none focus-visible:ring-4 ring-gray-400;
+	}
+
+	._transition-underline {
+		transition: text-decoration-color 100ms ease-out;
+	}
+
+	.underline-transparent {
+		text-decoration-color: transparent;
+	}
+
+	@screen pointer {
+		@variants hover {
+			.underline-current:hover {
+				text-decoration-color: currentColor;
+			}
+		}
+	}
 }
