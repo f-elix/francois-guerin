@@ -114,4 +114,8 @@ input {
 			}
 		}
 	}
+
+	._p-security {
+		@apply p-80;
+	}
 }
