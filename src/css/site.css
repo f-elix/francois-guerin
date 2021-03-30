@@ -80,7 +80,8 @@ body {
 	}
 }
 
-svg {
+svg,
+img {
 	display: block;
 }
 

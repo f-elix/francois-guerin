@@ -1,7 +1,9 @@
 <script lang="ts">
 	import { site } from '$lib/data/site';
+	import type { Link } from 'src/global';
 
 	const { header, global } = $site;
+	const links = header.links as Link[];
 </script>
 
 <header class="flex flex-col justify-center items-center h-screen">
@@ -15,7 +17,7 @@
 	</h1>
 	<nav id="navigation">
 		<ul class="flex items-center justify-center space-x-70">
-			{#each header.links as link}
+			{#each links as link}
 				<li>
 					<a
 						class="p-50 rounded-10 _focus-default pointer:hover:bg-main-reverse-40 pointer:hover:text-main-reverse transition-colors"
