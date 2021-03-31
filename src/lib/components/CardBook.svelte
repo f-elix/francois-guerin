@@ -36,7 +36,7 @@
 		tabindex="-1"
 	>
 		<picture>
-			<img src="{assets}/img/{book.image}.jpg" alt={book.alt} class="w-full h-full" />
+			<img src="{assets}/img/{book.image}" alt={book.alt} class="w-full h-full" />
 		</picture>
 	</button>
 	<h3>

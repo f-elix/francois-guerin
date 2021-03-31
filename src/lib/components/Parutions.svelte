@@ -1,13 +1,13 @@
 <script lang="ts">
-	import { site } from '$lib/data/site';
-	import CardBook from '$lib/components/CardBook.svelte';
 	import type { Book } from 'src/global';
+	import { site } from '$lib/data/site';
+	import Section from '$lib/components/Section.svelte';
+	import CardBook from '$lib/components/CardBook.svelte';
 
 	const books = $site.books as Book[];
 </script>
 
-<section class="space-y-160 _p-security" id="parutions">
-	<h2 class="text-90 font-bold text-center">Parutions</h2>
+<Section title="Parutions" id="parutions">
 	<ul class="grid xs:grid-cols-4 gap-x-100 gap-y-160 max-w-xl mx-auto">
 		{#each books as book}
 			<li>
@@ -15,4 +15,4 @@
 			</li>
 		{/each}
 	</ul>
-</section>
+</Section>

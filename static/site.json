@@ -43,7 +43,7 @@
                     "content": "Malgré la cupidité de certains, la quête irraisonnée de la richesse qui transforme d'autres en véritables prédateurs, malgré le froid mordant qui tue tous les imprudents qui osent se retrouver sur son passage, leur périple s'avérera un véritable succès. Leur patience, leur témérité et leur audace vaudront aux deux amis une vaste fortune, qui permettra à McKay de devenir un magnat de la finance."
                 }
             ],
-            "image": "or",
+            "image": "or.jpg",
             "alt": "Couverture de La ruée vers l'or"
         },
         {
@@ -61,7 +61,7 @@
                     "content": "Mais gérer le succès n'est pas si simple et monsieur Gaspard se retrouve rapidement devant des difficultés dont il ne sait plus se dépêtrer."
                 }
             ],
-            "image": "peur-du-pire",
+            "image": "peur-du-pire.jpg",
             "alt": "Couverture de La peur du pire"
         },
         {
@@ -79,7 +79,7 @@
                     "content": "Ce livre raconte l'histoire d'un malheur, celui qui questionne les choix et les décisions. Malheur qui remet sur le tapis nos emploi du temps inconsidérés et insouciants, qui met en lumière les limites de la liberté de choisir, dans cette vie de questionnements, de désillusions et de surcharge du temps qui caractérise notre époque actuelle. À travers ces fragments de jours incertains se construisent peu à peu la réalité du personnage et son adaptation à la menace qui pèse sur lui, permettant de partager brièvement sa solitude, son désarroi. À l'image de ce qui guette chacun de nous, un jour espéré lointain."
                 }
             ],
-            "image": "pente",
+            "image": "pente.jpg",
             "alt": "Couverture de Jusqu'au pied de la pente"
         },
         {
@@ -109,7 +109,7 @@
                     "content": "Par-delà ce destin aussi exceptionnel que tragique, par cette relation intime de la vie d’un interprète de concert, ces archives offrent une plongée saisissante dans le monde du racisme qui sévissait au début du XXe siècle."
                 }
             ],
-            "image": "prodige",
+            "image": "prodige.jpg",
             "alt": "Couverture de Prodige noir"
         },
         {
@@ -127,7 +127,7 @@
                     "content": "Un jour, pour mettre à l’épreuve l’oreille d’Audrey, Mathieu lui demande d’identifier un enregistrement pirate déniché par hasard chez un disquaire. Elle reconnaît avec stupéfaction la voix de Maria Callas. Cependant, ce disque fait partie d’une série de trois qui vaudrait une fortune si elle était complète. Commence alors une quête effrénée qui les mènera jusqu’à Venise. Là, dans la ville de toutes les romances, ils font une découverte renversante qui jette un éclairage nouveau sur la carrière de la diva et sur les circonstances nébuleuses de son décès…"
                 }
             ],
-            "image": "callas",
+            "image": "callas.jpg",
             "alt": "Couverture de Sur la piste de Callas"
         },
         {
@@ -145,7 +145,7 @@
                     "content": "Le grand maître fait irruption au XXIe siècle et se raconte à son hôte du moment. Toutes les facettes de sa vie y passent: découverte de l'art devant les cartons de Michel-Ange et de Léonard de Vinci, apprentissage des techniques d'orfèvrerie dans différents ateliers, perfectionnement de ses habiletés de sculpture et avancement de l'art lors de la création de son célèbre Persée; sans oublier les nombreuses colères et rixes du maître qui le menèrent à l'exil et à l'emprisonnement."
                 }
             ],
-            "image": "benvenuto",
+            "image": "benvenuto.jpg",
             "alt": "Couverture de Messire Benvenuto"
         },
         {
@@ -163,7 +163,7 @@
                     "content": "Gabriel, commissaire-priseur lors de la vente, est démis de ses fonctions. Il décide alors de retourner au vignoble de ses parents, qu'il a quitté depuis plusieurs années, afin de comprendre pourquoi son père se trouvait sur les lieux lors de l'encan. L'attendent alors dans les champs qui l'ont vu grandir plusieurs événements qui mèneront Gabriel à remettre en doute sa conviction qu'il n'est pas fait pour être vigneron."
                 }
             ],
-            "image": "germe",
+            "image": "germe.jpg",
             "alt": "Couverture de Le germe"
         },
         {
@@ -181,8 +181,18 @@
                     "content": "Ainsi commence une amitié équivoque, mais sincère, entre un homme et une femme. Au fil de leurs rencontres épisodiques, Joana présente à Joël de courtes nouvelles qu’elle a écrites. Des textes étranges, qui donnent lieu à des discussions passionnées, mais qui troublent Joël. Car derrière ces récits et le regard parfois glacial de Joana, rampe un noir et lourd secret."
                 }
             ],
-            "image": "memoires",
+            "image": "memoires.jpg",
             "alt": "Couverture de Mémoire d'outre-bombe"
         }
-    ]
+    ],
+	"bio": {
+		"image": "fg.jpg",
+		"text": [
+			"Né à Ottawa en 1952, François Guérin, après avoir cheminé en sciences de la santé, décide en 1973 de séjourner en France pour y étudier la composition musicale. Il suit alors des cours avec Jean-Étienne Marie et Pierre Schaeffer, tout en évoluant vers une maîtrise sur la perception musicale avec Michel Imberty à Paris. Il obtient son diplôme de l’Université de Nanterre en 1977.",
+			"Il termine ce parcours avec Abraham Moles, décrochant un DEA en psychologie sociale à l’Université de Strasbourg, avant de revenir au Québec en 1981.",
+			"Il poursuit alors simultanément une formation en informatique de gestion et un doctorat en musicologie à l’Université de Montréal, sous la conduite de Marcelle Deschênes, diplôme qu’il obtient en 1988.",
+			"Après avoir enseigné la perception auditive et collaboré à diverses publications musicales, il travaille maintenant comme analyste en informatique, tout en accordant une place de plus en plus importante à l’écriture.",
+			"François Guérin en est à son huitième roman aux Éditions JCL: Après Mémoires d’outre-bombe (1998), Le Germe (1999), Messire Benvenuto (2001), et Sur la piste de Callas (2004), il nous offre en 2006 Prodige noir, véritable fugue littéraire sur fond d’histoire sociale. Il faut ensuite attendre deux longues années, soit en 2008, avant que le roman Jusqu'au pied de la pente paraisse sur les tablettes des librairies québécoises. Puis à l'hiver 2012, La Peur du pire se révèle un véritable conte urbain proche de l'allégorie, où un texte riche et intelligent camoufle une virulente critique de la société actuelle. Enfin, au printemps 2013, le roman La Ruée vers l'or rend hommage au célèbre film hyponyme de Charlie Chaplin, tourné en "
+		]
+	}
 }
