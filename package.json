@@ -11,7 +11,7 @@
 	"devDependencies": {
 		"@sveltejs/adapter-node": "next",
 		"@sveltejs/kit": "^1.0.0-next.63",
-		"@tailwindcss/jit": "^0.1.17",
+		"@tailwindcss/jit": "^0.1.18",
 		"@typescript-eslint/eslint-plugin": "^4.19.0",
 		"@typescript-eslint/parser": "^4.19.0",
 		"autoprefixer": "^10.2.5",
@@ -36,5 +36,8 @@
 	"type": "module",
 	"engines": {
 		"node": ">= 12.17.0"
+	},
+	"dependencies": {
+		"@xstate/fsm": "^1.6.0"
 	}
 }

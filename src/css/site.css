@@ -29,17 +29,16 @@ html {
 
 	font-size: calc(var(--unit-in-vw) * 3);
 
-	&[data-scroll='locked'] {
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: transparent;
+
+	&[data-site-scroll='locked'] {
 		position: fixed;
 		top: calc(var(--scroll-top) * -1px);
 		width: 100%;
 		padding-right: calc(var(--scroll-padding) * 1px);
 		overflow: hidden;
 	}
-
-	-webkit-font-smoothing: antialiased;
-	-webkit-tap-highlight-color: transparent;
-	scroll-behavior: smooth;
 }
 
 body {
@@ -118,5 +117,13 @@ input {
 
 	._p-security {
 		@apply p-80;
+	}
+
+	._grid-stack {
+		display: grid;
+
+		> * {
+			grid-area: 1 / 1;
+		}
 	}
 }

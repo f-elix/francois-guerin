@@ -1,21 +1,100 @@
 <script lang="ts">
+	import type { StateMachine } from '@xstate/fsm/lib/types';
+	import type { ModalContext, ModalState, ModalEvent } from '$lib/machines/modal';
+	import { interpret } from '@xstate/fsm';
+	import { modal } from '$lib/machines/modal';
+
+	import { onMount } from 'svelte';
+
+	import { trapFocus } from '$lib/utils/trapFocus';
+	import { globalEvent } from '$lib/utils/windowEvents';
+
+	import { site } from '$lib/data/site';
+
+	import IconClose from './IconClose.svelte';
+
 	export let id: string;
+
+	let modalEl: HTMLElement;
+	export let service: StateMachine.Service<ModalContext, ModalEvent, ModalState> = interpret(
+		modal(id)
+	).start();
+
+	onMount(() => {
+		service.send({ type: 'INIT', data: { el: modalEl } });
+	});
+
+	const onKeydown = (e) => {
+		if (e.which !== 27) {
+			return;
+		}
+		service.send({ type: 'CLOSE' });
+	};
+
+	const onClose = () => {
+		service.send({ type: 'CLOSE' });
+	};
+
+	const onModalScroll = (e) => {
+		if ($service.value !== 'open') {
+			return;
+		}
+		const scrollTop = modalEl.scrollTop;
+		const height = modalEl.offsetHeight;
+		const scrollHeight = modalEl.scrollHeight;
+		if (scrollTop + height >= scrollHeight) {
+			service.send({ type: 'CLOSE' });
+		}
+	};
+
+	globalEvent('keydown', onKeydown);
 </script>
 
 <div
-	class="_modal invisible flex justify-center fixed top-0 left-0 w-full h-screen pt-280 overflow-y-auto"
+	bind:this={modalEl}
+	use:trapFocus
+	class="_modal invisible _grid-stack fixed top-0 left-0 w-full h-screen opacity-0 overflow-hidden"
 	role="dialog"
 	aria-modal="true"
+	data-state={$service.value}
+	on:scroll={onModalScroll}
 	{id}
 >
-	<a href="#" aria-hidden="true" tabindex="-1" class="absolute inset-0 bg-black-30" />
-	<div class="relative w-full max-w-xs mx-auto _p-security rounded-30 bg-white-pure">
+	<button
+		on:click={onClose}
+		aria-controls={id}
+		aria-hidden="true"
+		tabindex="-1"
+		class="block w-full h-full bg-black-60 focus:outline-none"
+	/>
+	<div
+		class="_modal-content flex flex-col relative w-full max-w-sm mx-auto mt-280 mb-320 py-100 px-150 rounded-30 bg-white-pure"
+	>
+		<button class="self-end _focus-default" on:click={onClose}>
+			<span class="sr-only">{$site.ui.close}</span>
+			<IconClose />
+		</button>
 		<slot />
 	</div>
 </div>
 
 <style lang="postcss">
-	._modal:target {
-		visibility: visible;
+	._modal {
+		--duration: 100ms;
+		transition: visibility 0s linear var(--duration), opacity var(--duration) linear;
+
+		._modal-content {
+			transition: transform 400ms var(--ease-out-expo);
+			transform: translateY(30%);
+		}
+
+		&[data-state='open'] {
+			transition-delay: 0s;
+			@apply visible opacity-100 overflow-y-auto;
+
+			._modal-content {
+				transform: none;
+			}
+		}
 	}
 </style>

@@ -1,4 +1,7 @@
 {
+	"ui": {
+		"close": "Fermer"
+	},
     "global": {
         "siteTitle": "François Guérin"
     },
