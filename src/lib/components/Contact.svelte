@@ -50,12 +50,12 @@
 
 			._required {
 				@apply relative;
+			}
 
-				&::after {
-					content: '*';
-					vertical-align: super;
-					@apply text-red-700 text-10;
-				}
+			._required::after {
+				content: '*';
+				vertical-align: super;
+				@apply text-red-700 text-10;
 			}
 		}
 

@@ -87,14 +87,14 @@
 			transition: transform 400ms var(--ease-out-expo);
 			transform: translateY(30%);
 		}
+	}
 
-		&[data-state='open'] {
-			transition-delay: 0s;
-			@apply visible opacity-100 overflow-y-auto;
+	._modal[data-state='open'] {
+		transition-delay: 0s;
+		@apply visible opacity-100 overflow-y-auto;
 
-			._modal-content {
-				transform: none;
-			}
+		._modal-content {
+			transform: none;
 		}
 	}
 </style>
