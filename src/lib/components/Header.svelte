@@ -59,6 +59,7 @@
 	}
 
 	._nav-link {
+		@apply opacity-0;
 		animation: slide-up 800ms cubic-bezier(0.2, 0, 0.2, 1) calc(var(--i) * 150ms) forwards;
 	}
 
