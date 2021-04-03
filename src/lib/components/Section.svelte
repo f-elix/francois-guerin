@@ -3,7 +3,7 @@
 	export let id: string;
 </script>
 
-<section class="space-y-160 _p-security" {id}>
+<section class="space-y-160 _px-security" {id}>
 	<h2 class="text-90 font-bold text-center">{title}</h2>
 	<slot />
 </section>

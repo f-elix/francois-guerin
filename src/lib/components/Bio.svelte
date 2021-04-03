@@ -5,17 +5,20 @@
 </script>
 
 <Section title="Biographie" id="bio">
-	<article class="flex mx-w-sm mx-auto">
-		<picture class="sticky top-0">
+	<article
+		class="flex flex-col items-center xl:items-stretch xl:flex-row space-y-160 xl:space-y-0 xl:space-x-100 max-w-md mx-auto"
+	>
+		<picture>
 			<img
+				class="xl:sticky top-80 max-w-320 rounded-10 ring-offset-main ring-black ring-offset-2 ring-2 shadow-2xl"
 				src="{assets}/img/{$site.bio.image}"
 				alt="Portrait de François Guérin"
 				title="François Guérin"
 			/>
 		</picture>
-		<div class="flex flex-col max-w-[70ch] space-y-70">
+		<div class="flex flex-col space-y-70">
 			{#each $site.bio.text as paragraph}
-				<p>{paragraph}</p>
+				<p class="max-w-[70ch]">{paragraph}</p>
 			{/each}
 		</div>
 	</article>

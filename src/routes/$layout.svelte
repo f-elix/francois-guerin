@@ -28,7 +28,7 @@
 
 <SrNav />
 <Header />
-<main id="content">
+<main class="space-y-200" id="content">
 	<slot />
 </main>
 <Footer />
