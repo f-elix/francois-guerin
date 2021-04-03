@@ -8,7 +8,7 @@
 		<span class="relative"
 			>{title}
 			<span
-				class="_underline absolute top-full right-0 w-4/5 h-40 rounded-full bg-black-80 transition-transform duration-[1400ms] ease-out-expo origin-top-left transform scale-x-0 -translate-x-full"
+				class="_underline absolute top-full right-0 w-4/5 h-40 rounded-full bg-main-reverse-80 transition-transform duration-[1400ms] ease-out-expo origin-top-left transform scale-x-0 -translate-x-full"
 			/></span
 		>
 	</h2>

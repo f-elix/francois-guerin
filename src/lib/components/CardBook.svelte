@@ -64,7 +64,7 @@
 					<blockquote>{text.content}</blockquote>
 				{/if}
 			{/each}
-			<hr class="bg-black h-30 border-none" />
+			<hr class="bg-main-reverse h-30 border-none" />
 			<aside>
 				<dl class="flex flex-col space-y-70">
 					{#each metas as meta}
