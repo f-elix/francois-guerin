@@ -16,6 +16,10 @@
 </section>
 
 <style>
+	._section-title {
+		scroll-margin-top: theme('spacing.100');
+	}
+
 	:global(._section-title[data-scroll='in']) {
 		._underline {
 			transform: none;
