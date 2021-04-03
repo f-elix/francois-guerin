@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { site } from '$lib/data/site';
 	import type { Link } from 'src/global';
+	import IconDownArrow from '$lib/components/IconDownArrow.svelte';
 
 	const { header, global } = $site;
 	const links = header.links as Link[];
@@ -33,6 +34,11 @@
 			{/each}
 		</ul>
 	</nav>
+	<a class="_arrow-link block mt-200 group focus:outline-none" tabindex="-1" href="#{links[0].url}">
+		<IconDownArrow
+			extClass={'transition-transform duration-500 ease-out transform pointer:group-hover:translate-y-1/4'}
+		/>
+	</a>
 </header>
 
 <style lang="postcss">
@@ -53,7 +59,11 @@
 	}
 
 	._nav-link {
-		animation: up 800ms cubic-bezier(0.2, 0, 0.2, 1) calc(var(--i) * 150ms) forwards;
+		animation: slide-up 800ms cubic-bezier(0.2, 0, 0.2, 1) calc(var(--i) * 150ms) forwards;
+	}
+
+	._arrow-link {
+		animation: slide-up 800ms cubic-bezier(0.2, 0, 0.2, 1) forwards;
 	}
 
 	@keyframes type {
@@ -74,7 +84,7 @@
 		}
 	}
 
-	@keyframes up {
+	@keyframes slide-up {
 		from {
 			opacity: 0;
 			transform: translateY(100%);
