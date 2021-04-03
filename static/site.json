@@ -194,5 +194,10 @@
 			"Après avoir enseigné la perception auditive et collaboré à diverses publications musicales, il travaille maintenant comme analyste en informatique, tout en accordant une place de plus en plus importante à l’écriture.",
 			"François Guérin en est à son huitième roman aux Éditions JCL: Après Mémoires d’outre-bombe (1998), Le Germe (1999), Messire Benvenuto (2001), et Sur la piste de Callas (2004), il nous offre en 2006 Prodige noir, véritable fugue littéraire sur fond d’histoire sociale. Il faut ensuite attendre deux longues années, soit en 2008, avant que le roman Jusqu'au pied de la pente paraisse sur les tablettes des librairies québécoises. Puis à l'hiver 2012, La Peur du pire se révèle un véritable conte urbain proche de l'allégorie, où un texte riche et intelligent camoufle une virulente critique de la société actuelle. Enfin, au printemps 2013, le roman La Ruée vers l'or rend hommage au célèbre film hyponyme de Charlie Chaplin, tourné en "
 		]
+	},
+	"contact": {
+		"formAction": "https://formspree.io/f/meqvqolw",
+		"success": "Votre message a bien été envoyé!",
+		"error": "Une erreur est survenue, veuillez s'il vous plaît réessayer."
 	}
 }

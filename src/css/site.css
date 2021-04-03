@@ -119,6 +119,10 @@ input {
 		@apply p-80;
 	}
 
+	._px-security {
+		@apply px-80;
+	}
+
 	._grid-stack {
 		display: grid;
 
