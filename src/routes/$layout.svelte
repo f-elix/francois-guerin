@@ -17,11 +17,20 @@
 
 	import { site } from '$lib/data/site';
 
+	import ScrollOut from 'scroll-out';
+
 	import SrNav from '$lib/components/SrNav.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	import { onMount } from 'svelte';
 
 	export let data;
+
+	onMount(() => {
+		ScrollOut({
+			threshold: 0.4
+		});
+	});
 
 	site.set(data);
 </script>

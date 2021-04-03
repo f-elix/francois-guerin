@@ -4,6 +4,21 @@
 </script>
 
 <section class="space-y-160 _px-security" {id}>
-	<h2 class="text-90 font-bold text-center">{title}</h2>
+	<h2 class="_section-title text-90 font-bold text-center" data-scroll>
+		<span class="relative"
+			>{title}
+			<span
+				class="_underline absolute top-full right-0 w-4/5 h-40 rounded-full bg-black-80 transition-transform duration-[1400ms] ease-out-expo origin-top-left transform scale-x-0 -translate-x-full"
+			/></span
+		>
+	</h2>
 	<slot />
 </section>
+
+<style>
+	:global(._section-title[data-scroll='in']) {
+		._underline {
+			transform: none;
+		}
+	}
+</style>
