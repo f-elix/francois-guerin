@@ -61,7 +61,7 @@
 
 		input,
 		textarea {
-			@apply px-60 py-50 rounded-5 shadow-md focus:ring-4 ring-black-80 transition-shadow duration-100;
+			@apply px-60 py-50 rounded-5 shadow focus:ring-4 ring-black-80 transition-shadow duration-100;
 			@apply focus:outline-none;
 		}
 

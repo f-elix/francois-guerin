@@ -10,7 +10,7 @@
 	>
 		<picture>
 			<img
-				class="xl:sticky top-80 max-w-320 rounded-10 ring-offset-main ring-black ring-offset-2 ring-2 shadow-2xl"
+				class="xl:sticky top-80 max-w-320 rounded-10 ring-offset-main ring-black-80 ring-offset-4 ring-4 shadow-2xl"
 				src="{assets}/img/{$site.bio.image}"
 				alt="Portrait de François Guérin"
 				title="François Guérin"
