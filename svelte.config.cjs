@@ -19,8 +19,7 @@ module.exports = {
 		// You can create optimized builds for different platforms by
 		// specifying a different adapter
 		adapter: static(),
-		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte',
+		target: '#site',
 		router: false,
 		vite: {
 			ssr: {
