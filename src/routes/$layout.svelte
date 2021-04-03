@@ -35,6 +35,11 @@
 	site.set(data);
 </script>
 
+<svelte:head>
+	<title>{$site.global.siteTitle}</title>
+	<meta name="description" content={$site.global.siteDescription} />
+</svelte:head>
+
 <SrNav />
 <Header />
 <main class="space-y-200" id="content">

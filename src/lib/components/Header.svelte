@@ -54,9 +54,11 @@
 	<a
 		class="_arrow-link block mt-200 group focus:outline-none"
 		tabindex="-1"
+		aria-hidden="true"
 		href="#{links[0].url}"
 		on:click={onLinkClick}
 	>
+		<span class="sr-only">{links[0].label}</span>
 		<IconDownArrow
 			extClass={'transition-transform duration-500 ease-out transform pointer:group-hover:translate-y-1/4'}
 		/>
