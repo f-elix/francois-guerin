@@ -53,7 +53,7 @@
 <div
 	bind:this={modalEl}
 	use:trapFocus
-	class="_modal invisible _grid-stack fixed top-0 left-0 w-full h-screen opacity-0 overflow-hidden"
+	class="_modal invisible _grid-stack fixed z-50 top-0 left-0 w-full h-screen opacity-0 overflow-hidden"
 	role="dialog"
 	aria-modal="true"
 	data-state={$service.value}
