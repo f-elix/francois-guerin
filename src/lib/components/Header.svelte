@@ -4,23 +4,29 @@
 
 	const { header, global } = $site;
 	const links = header.links as Link[];
+	const title = global.siteTitle;
 </script>
 
 <header class="flex flex-col justify-center items-center h-screen">
-	<h1 class="h-[1.3em] text-100 font-bold" data-typing>
-		{#each global.siteTitle as char, i}
-			<span class="_typed-char relative invisible" style="--i: {i + 1};"
-				><span>{char}</span><span class="_carret absolute top-[-0.1em] right-[-0.325em]">|</span
-				></span
-			>
+	<h1 class="h-[1.3em] text-100 font-bold" style="--title-length: {title.length};">
+		{#each title as char, i}
+			<span class="_typed-char inline-flex relative invisible" style="--i: {i + 1};">
+				{#if char === ' '}
+					&nbsp;
+				{:else}
+					{char}
+				{/if}
+				<span class="_carret absolute left-[0.3em]">|</span>
+			</span>
 		{/each}
 	</h1>
 	<nav id="navigation">
-		<ul class="flex items-center justify-center space-x-70">
-			{#each links as link}
-				<li>
+		<ul class="_nav-links flex items-center justify-center space-x-70">
+			{#each links as link, i}
+				<li class="_nav-item flex transition-opacity">
 					<a
-						class="p-50 rounded-10 _focus-default pointer:hover:bg-main-reverse-40 pointer:hover:text-main-reverse transition-colors"
+						class="_nav-link px-50 py-30 rounded-10 _focus-default pointer:hover:bg-main-reverse-10 font-bold transition-colors"
+						style="--i: {i}"
 						href="#{link.url}">{link.label}</a
 					>
 				</li>
@@ -31,12 +37,23 @@
 
 <style lang="postcss">
 	._typed-char {
-		--type-speed: 100ms;
-		animation: type var(--type-speed) linear calc(var(--type-speed) * var(--i)) forwards;
+		--type-speed: 80ms;
+		--duration: calc(var(--title-length) * var(--type-speed));
+		animation: type var(--type-speed) steps(var(--title-length), jump-none)
+			calc(var(--type-speed) * var(--i)) forwards;
 	}
 
 	._carret {
-		animation: remove var(--type-speed) linear calc(var(--type-speed) * var(--i)) forwards;
+		animation: remove var(--type-speed) steps(var(--title-length), jump-none)
+			calc(var(--type-speed) * var(--i)) forwards;
+	}
+
+	._nav-links:hover > ._nav-item:not(:hover) {
+		opacity: 0.5;
+	}
+
+	._nav-link {
+		animation: up 800ms cubic-bezier(0.2, 0, 0.2, 1) calc(var(--i) * 150ms) forwards;
 	}
 
 	@keyframes type {
@@ -54,6 +71,17 @@
 		}
 		to {
 			visibility: hidden;
+		}
+	}
+
+	@keyframes up {
+		from {
+			opacity: 0;
+			transform: translateY(100%);
+		}
+		to {
+			opacity: 1;
+			transform: none;
 		}
 	}
 </style>
