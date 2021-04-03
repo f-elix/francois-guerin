@@ -40,7 +40,7 @@
 	<nav id="navigation">
 		<ul class="_nav-links flex items-center justify-center space-x-70">
 			{#each links as link, i}
-				<li class="_nav-item flex transition-opacity">
+				<li class="_nav-item flex transition-opacity duration-300">
 					<a
 						class="_nav-link px-50 py-30 rounded-10 _focus-default pointer:hover:bg-main-reverse-10 font-bold transition-colors"
 						style="--i: {i}"
