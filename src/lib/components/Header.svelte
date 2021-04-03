@@ -6,22 +6,6 @@
 	const { header, global } = $site;
 	const links = header.links as Link[];
 	const title = global.siteTitle;
-
-	const onLinkClick = (e: MouseEvent) => {
-		const link = e.target as HTMLAnchorElement;
-		const href = link.getAttribute('href');
-		if (!href) {
-			return;
-		}
-		const section = document.querySelector(href);
-		if (!section) {
-			return;
-		}
-		e.preventDefault();
-		section.scrollIntoView({
-			behavior: 'smooth'
-		});
-	};
 </script>
 
 <header class="flex flex-col justify-center items-center h-screen">
@@ -44,19 +28,13 @@
 					<a
 						class="_nav-link px-50 py-30 rounded-10 _focus-default pointer:hover:bg-main-reverse-10 font-bold transition-colors"
 						style="--i: {i}"
-						href="#{link.url}"
-						on:click={onLinkClick}>{link.label}</a
+						href="#{link.url}">{link.label}</a
 					>
 				</li>
 			{/each}
 		</ul>
 	</nav>
-	<a
-		class="_arrow-link block mt-200 group focus:outline-none"
-		tabindex="-1"
-		href="#{links[0].url}"
-		on:click={onLinkClick}
-	>
+	<a class="_arrow-link block mt-200 group focus:outline-none" tabindex="-1" href="#{links[0].url}">
 		<IconDownArrow
 			extClass={'transition-transform duration-500 ease-out transform pointer:group-hover:translate-y-1/4'}
 		/>
