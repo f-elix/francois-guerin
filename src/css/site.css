@@ -39,8 +39,6 @@ html {
 		padding-right: calc(var(--scroll-padding) * 1px);
 		overflow: hidden;
 	}
-
-	scroll-behavior: smooth;
 }
 
 body {
