@@ -22,14 +22,17 @@
 			key: 'isbn'
 		}
 	];
+	const url = `#${id}`;
 
-	const onOpenModal = () => {
+	const onOpenModal = (e) => {
+		e.preventDefault();
 		modal.send({ type: 'OPEN' });
 	};
 </script>
 
 <article class="flex flex-col items-center group">
-	<button
+	<a
+		href={url}
 		on:click={onOpenModal}
 		aria-controls={id}
 		class="w-260 h-290 mb-70 rounded-10 shadow-md overflow-hidden focus:outline-none"
@@ -42,16 +45,17 @@
 				class="w-full h-full transition-transform duration-1000 ease-out-expo transform pointer:group-hover:scale-105"
 			/>
 		</picture>
-	</button>
+	</a>
 	<h3>
-		<button
+		<a
+			href={url}
 			on:click={onOpenModal}
-			class="relative px-50 overflow-hidden p-40 _focus-default"
+			class="block relative px-50 overflow-hidden p-40 _focus-default"
 			aria-controls={id}
 			><span class="font-bold">{book.title}</span> ({book.releaseYear})
 			<span
 				class="absolute top-0 left-0 w-full h-full bg-main-reverse-10 transform translate-y-full pointer:group-hover:transform-none transition-transform ease-out-expo duration-1000"
-			/></button
+			/></a
 		>
 	</h3>
 	<Modal {id} bind:service={modal}>

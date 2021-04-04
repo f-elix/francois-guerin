@@ -20,6 +20,8 @@
 		modal(id)
 	).start();
 
+	const closeUrl = `#${id}-`;
+
 	onMount(() => {
 		service.send({ type: 'INIT', data: { el: modalEl } });
 	});
@@ -31,7 +33,8 @@
 		service.send({ type: 'CLOSE' });
 	};
 
-	const onClose = () => {
+	const onClose = (e) => {
+		e.preventDefault();
 		service.send({ type: 'CLOSE' });
 	};
 
@@ -60,8 +63,9 @@
 	on:scroll={onModalScroll}
 	{id}
 >
-	<button
+	<a
 		on:click={onClose}
+		href={closeUrl}
 		aria-controls={id}
 		aria-hidden="true"
 		tabindex="-1"
@@ -70,10 +74,10 @@
 	<div
 		class="_modal-content flex flex-col relative w-full max-w-sm mx-auto mt-280 mb-320 py-100 px-150 rounded-30 bg-white-pure"
 	>
-		<button class="self-end _focus-default" on:click={onClose}>
+		<a href={closeUrl} class="self-end _focus-default" on:click={onClose}>
 			<span class="sr-only">{$site.ui.close}</span>
 			<IconClose />
-		</button>
+		</a>
 		<slot />
 	</div>
 </div>
@@ -89,7 +93,8 @@
 		}
 	}
 
-	._modal[data-state='open'] {
+	._modal[data-state='open'],
+	._modal:target {
 		transition-delay: 0s;
 		@apply visible opacity-100 overflow-y-auto;
 
