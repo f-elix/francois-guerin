@@ -33,9 +33,6 @@ html {
 	-webkit-tap-highlight-color: transparent;
 
 	&[data-site-scroll='locked'] {
-		position: fixed;
-		top: calc(var(--scroll-top) * -1px);
-		width: 100%;
 		padding-right: calc(var(--scroll-padding) * 1px);
 		overflow: hidden;
 	}

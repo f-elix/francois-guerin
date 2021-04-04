@@ -4,15 +4,12 @@ const siteScrollMachine = createMachine(
 	{
 		id: 'siteScroll',
 		initial: 'unlocked',
-		context: {
-			scrollTop: 0
-		},
 		states: {
 			unlocked: {
 				on: {
 					LOCK: {
 						target: 'locked',
-						actions: ['setScrollTop']
+						actions: ['lockScroll']
 					}
 				}
 			},
@@ -20,7 +17,7 @@ const siteScrollMachine = createMachine(
 				on: {
 					UNLOCK: {
 						target: 'unlocked',
-						actions: ['resetScrollPos']
+						actions: ['unlockScroll']
 					}
 				}
 			}
@@ -28,24 +25,14 @@ const siteScrollMachine = createMachine(
 	},
 	{
 		actions: {
-			setScrollTop: assign({
-				scrollTop: () => {
-					const html = document.documentElement;
-					const scrollTop = window.scrollY;
-					html.style.setProperty('--scroll-top', `${scrollTop}`);
-					html.style.setProperty('--scroll-padding', `${window.innerWidth - html.clientWidth}`);
-					html.dataset.siteScroll = 'locked';
-					return scrollTop;
-				}
-			}),
-			resetScrollPos: (context) => {
+			lockScroll: () => {
+				const html = document.documentElement;
+				html.style.setProperty('--scroll-padding', `${window.innerWidth - html.clientWidth}`);
+				html.dataset.siteScroll = 'locked';
+			},
+			unlockScroll: () => {
 				const html = document.documentElement;
 				delete html.dataset.siteScroll;
-				if (typeof window !== 'undefined' && context.scrollTop > 0) {
-					window.scrollTo({
-						top: context.scrollTop
-					});
-				}
 			}
 		}
 	}
