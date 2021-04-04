@@ -3,7 +3,7 @@
 	export let id: string;
 </script>
 
-<section class="space-y-160 _px-security" {id}>
+<section class="space-y-160" {id}>
 	<h2 class="_section-title text-90 font-bold text-center" data-scroll>
 		<span class="relative"
 			>{title}

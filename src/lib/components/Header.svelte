@@ -24,8 +24,8 @@
 	};
 </script>
 
-<header class="flex flex-col justify-center items-center h-screen">
-	<h1 class="h-[1.3em] text-100 font-bold" style="--title-length: {title.length};">
+<header class="flex flex-col justify-center items-center h-screen _px-security">
+	<h1 class="h-[1.3em] text-90 sm:text-100 font-bold" style="--title-length: {title.length};">
 		{#each title as char, i}
 			<span class="_typed-char inline-flex relative invisible" style="--i: {i + 1};">
 				{#if char === ' '}
@@ -52,7 +52,7 @@
 		</ul>
 	</nav>
 	<a
-		class="_arrow-link block mt-200 group focus:outline-none"
+		class="_arrow-link flex items-center justify-center w-120 mt-200 group focus:outline-none"
 		tabindex="-1"
 		aria-hidden="true"
 		href="#{links[0].url}"
@@ -60,7 +60,7 @@
 	>
 		<span class="sr-only">{links[0].label}</span>
 		<IconDownArrow
-			extClass={'transition-transform duration-500 ease-out transform pointer:group-hover:translate-y-1/4'}
+			extClass={'w-full h-full transition-transform duration-500 ease-out transform pointer:group-hover:translate-y-1/4'}
 		/>
 	</a>
 </header>

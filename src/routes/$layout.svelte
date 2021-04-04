@@ -61,7 +61,7 @@
 
 <SrNav />
 <Header />
-<main class="space-y-200" id="content">
+<main class="space-y-200 _px-security" id="content">
 	<slot />
 </main>
 <Footer />
