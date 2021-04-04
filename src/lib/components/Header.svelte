@@ -19,7 +19,7 @@
 		}
 		e.preventDefault();
 		section.scrollIntoView({
-			behavior: 'smooth'
+			behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
 		});
 	};
 </script>
