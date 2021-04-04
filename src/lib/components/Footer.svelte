@@ -13,5 +13,12 @@
 		target="_blank"
 		rel="noopener noreferrer">{footer.jclLink.label}</a
 	>
-	<small>Copyright {global.siteTitle} 2021</small>
+	<small
+		>&#169; <a
+			class="underline _focus-default"
+			href="https://github.com/f-elix"
+			target="_blank"
+			rel="noopener noreferrer">Félix Guérin</a
+		> 2021</small
+	>
 </footer>
