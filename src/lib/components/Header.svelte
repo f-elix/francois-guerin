@@ -8,8 +8,7 @@
 	const title = global.siteTitle;
 
 	const onLinkClick = (e: MouseEvent) => {
-		const target = e.target as HTMLElement;
-		const link = target.closest('a') as HTMLAnchorElement;
+		const link = e.currentTarget as HTMLElement;
 		const href = link.getAttribute('href');
 		if (!href) {
 			return;
