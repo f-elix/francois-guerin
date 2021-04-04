@@ -1,5 +1,6 @@
 <script lang="ts" context="module">
 	import type { Load } from '@sveltejs/kit';
+	import { assets } from '$app/paths';
 
 	export const load: Load = async ({ fetch }) => {
 		const res = await fetch('site.json');
@@ -38,6 +39,24 @@
 <svelte:head>
 	<title>{$site.global.siteTitle}</title>
 	<meta name="description" content={$site.global.siteDescription} />
+	<meta property="og:title" content={$site.global.siteTitle} />
+	<meta property="og:description" content={$site.global.siteDescription} />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="{assets}/img/fg.jpg" />
+	<meta property="og:url" content="https://francoisguerin.me/" />
+	<link rel="canonical" href="https://francoisguerin.me/" />
+	<link
+		rel="preload"
+		href="{assets}/fonts/anonymous-pro-v14-latin-regular.woff2"
+		as="font"
+		crossorigin="true"
+	/>
+	<link
+		rel="preload"
+		href="{assets}/fonts/anonymous-pro-v14-latin-700.woff2"
+		as="font"
+		crossorigin="true"
+	/>
 </svelte:head>
 
 <SrNav />
