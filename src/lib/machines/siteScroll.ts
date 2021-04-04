@@ -1,4 +1,4 @@
-import { createMachine, assign, interpret } from '@xstate/fsm';
+import { createMachine, interpret } from '@xstate/fsm';
 
 const siteScrollMachine = createMachine(
 	{
