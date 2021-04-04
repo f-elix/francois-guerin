@@ -70,7 +70,9 @@
 		aria-hidden="true"
 		tabindex="-1"
 		class="block w-full h-full bg-black-60 focus:outline-none"
-	/>
+	>
+		<span class="sr-only">{$site.ui.close}</span>
+	</a>
 	<div
 		class="_modal-content flex flex-col relative w-full max-w-sm mx-auto mt-280 mb-320 py-100 px-150 rounded-30 bg-white-pure"
 	>
@@ -97,9 +99,9 @@
 	._modal:target {
 		transition-delay: 0s;
 		@apply visible opacity-100 overflow-y-auto;
-
-		._modal-content {
-			transform: none;
-		}
+	}
+	._modal[data-state='open'] ._modal-content,
+	._modal:target ._modal-content {
+		transform: none;
 	}
 </style>
