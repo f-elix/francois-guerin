@@ -1,4 +1,4 @@
-const tailwindcss = require('@tailwindcss/jit');
+const tailwindcss = require('tailwindcss');
 const postcssImport = require('postcss-import');
 const postcssNested = require('postcss-nested');
 const autoprefixer = require('autoprefixer');

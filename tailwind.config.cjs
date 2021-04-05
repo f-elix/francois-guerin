@@ -12,6 +12,7 @@ const except = (exceptions, object) => {
 };
 
 module.exports = {
+	mode: 'jit',
 	purge: {
 		content: ['./src/**/*.{html,js,svelte,ts}']
 	},
