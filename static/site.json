@@ -29,6 +29,20 @@
         }
     },
     "books": [
+		{
+            "title": " La vie, c'est glauque!",
+            "releaseYear": 2021,
+            "pages": 168,
+            "isbn": "9782896334520",
+            "synopsis": [
+                {
+                    "tag": "p",
+                    "content": "Quand j’étais grand comme sept ans, mon papa a eu la mort. Ça fait un peu d’années. Mon frère, Bruno, il parle plus depuis le très mauvais soir, quand maman, elle a pleuré tout plein de larmes et que j’ai plus jamais vu papa. Maman, elle est comme sortie de sa tête, elle veut pas le dire, ce qui est arrivé. Elle fait toujours des réponses qui disent rien. Et des fois, quand je pose des questions, elle fait la colère. Moi, je voudrais savoir ce qui est arrivé à papa. Mais c’est pas facile de savoir quelque chose comme ça. J’ai juste la photo que les enquêteurs ils ont donné à Maman. Et j’ai juste mon ami Alberto qui vit dans la cabane en carton près de l’usine. C’est dur de faire la justice avec ça. La vie, c’est vraiment glauque!"
+                }
+            ],
+            "image": "la-vie-cest-glauque.jpg",
+            "alt": "Couverture de La vie c'est glauque!"
+        },
         {
             "title": "La ruée vers l'or",
             "releaseYear": 2013,
@@ -77,7 +91,7 @@
                 },
                 {
                     "tag": "p",
-                    "content": "Ce livre raconte l'histoire d'un malheur, celui qui questionne les choix et les décisions. Malheur qui remet sur le tapis nos emploi du temps inconsidérés et insouciants, qui met en lumière les limites de la liberté de choisir, dans cette vie de questionnements, de désillusions et de surcharge du temps qui caractérise notre époque actuelle. À travers ces fragments de jours incertains se construisent peu à peu la réalité du personnage et son adaptation à la menace qui pèse sur lui, permettant de partager brièvement sa solitude, son désarroi. À l'image de ce qui guette chacun de nous, un jour espéré lointain."
+                    "content": "Ce livre raconte l'histoire d'un malheur, celui qui questionne les choix et les décisions. Malheur qui remet sur le tapis nos emplois du temps inconsidérés et insouciants, qui met en lumière les limites de la liberté de choisir, dans cette vie de questionnements, de désillusions et de surcharge du temps qui caractérise notre époque actuelle. À travers ces fragments de jours incertains se construisent peu à peu la réalité du personnage et son adaptation à la menace qui pèse sur lui, permettant de partager brièvement sa solitude, son désarroi. À l'image de ce qui guette chacun de nous, un jour espéré lointain."
                 }
             ],
             "image": "pente.jpg",
@@ -175,7 +189,7 @@
             "synopsis": [
                 {
                     "tag": "blockquote",
-                    "content": "« Ses yeux semblaient percer les carapaces de chacun, comme si, à la manière d’une façon, elle sélectionnait soigneusement une victime sur qui elle allait incessamment s’abattre. Décidant d’être sa proie avant qu’elle ne choisisse quelqu’un d’autre, je me suis approché d’elle. »"
+                    "content": "« Ses yeux semblaient percer les carapaces de chacun, comme si, à la manière d’un faucon, elle sélectionnait soigneusement une victime sur qui elle allait incessamment s’abattre. Décidant d’être sa proie avant qu’elle ne choisisse quelqu’un d’autre, je me suis approché d’elle. »"
                 },
                 {
                     "tag": "p",
@@ -192,8 +206,12 @@
 			"Né à Ottawa en 1952, François Guérin, après avoir cheminé en sciences de la santé, décide en 1973 de séjourner en France pour y étudier la composition musicale. Il suit alors des cours avec Jean-Étienne Marie et Pierre Schaeffer, tout en évoluant vers une maîtrise sur la perception musicale avec Michel Imberty à Paris. Il obtient son diplôme de l’Université de Nanterre en 1977.",
 			"Il termine ce parcours avec Abraham Moles, décrochant un DEA en psychologie sociale à l’Université de Strasbourg, avant de revenir au Québec en 1981.",
 			"Il poursuit alors simultanément une formation en informatique de gestion et un doctorat en musicologie à l’Université de Montréal, sous la conduite de Marcelle Deschênes, diplôme qu’il obtient en 1988.",
-			"Après avoir enseigné la perception auditive et collaboré à diverses publications musicales, il travaille maintenant comme analyste en informatique, tout en accordant une place de plus en plus importante à l’écriture.",
-			"François Guérin en est à son huitième roman aux Éditions JCL: Après Mémoires d’outre-bombe (1998), Le Germe (1999), Messire Benvenuto (2001), et Sur la piste de Callas (2004), il nous offre en 2006 Prodige noir, véritable fugue littéraire sur fond d’histoire sociale. Il faut ensuite attendre deux longues années, soit en 2008, avant que le roman Jusqu'au pied de la pente paraisse sur les tablettes des librairies québécoises. Puis à l'hiver 2012, La Peur du pire se révèle un véritable conte urbain proche de l'allégorie, où un texte riche et intelligent camoufle une virulente critique de la société actuelle. Enfin, au printemps 2013, le roman La Ruée vers l'or rend hommage au célèbre film hyponyme de Charlie Chaplin."
+			"Après avoir enseigné la perception auditive et collaboré à diverses publications musicales, il travaille comme analyste en informatique, tout en accordant une place de plus en plus importante à l’écriture.",
+			"Huit de ses romans ont été publiés aux Éditions JCL. Ses deux premiers romans, Mémoires d'outre-bombe et Le Germe, paraissent respectivement en 1998 et 1999.",
+			"Au début du XXIe siècle, il aborde des textes biographiques et historiques, centrés sur des artistes : Messire Benvenuto (2001) évoque la vie du sculpteur de la Renaissance Benvenuto Cellini, Sur la piste de Callas (2004), le pouvoir de séduction du chant de la cantatrice Maria Callas et Prodige noir (2006), une fiction relatant la carrière du premier pianiste noir à aborder le répertoire de la musique classique.",
+			"En 2008, Jusqu'au pied de la pente renoue avec le roman psychologique, livre ouvert où le narrateur aborde les quelques années de vie qui lui restent. La Peur du pire, propose cette fois une fable urbaine satirique autour d'une cantine mobile et traite notamment des résistances devant le changement et des indécisions par crainte du pire.",
+			"En 2013, paraît La Ruée vers l'or, à partir du célèbre film du même nom de Charlie Chaplin. Roman inspiré d'un film, cette fois, au lieu d'un film inspiré d'un roman, l'histoire se déroule du point de vue de Jim McKay, comparse de Charlie Chaplin dans le film, et traite entre autres des thèmes de la cupidité et de l'ambition insensée.",
+			"Enfin, en 2021, paraît aux Éditions Pierre Tisseyre La vie, c'est glauque!, où le narrateur de 9 ans tente de découvrir ce qui est arrivé à son père décédé tragiquement."
 		]
 	},
 	"contact": {
