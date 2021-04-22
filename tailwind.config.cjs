@@ -1,3 +1,6 @@
+// eslint-disable-next-line
+const colors = require('tailwindcss/colors');
+
 const screenExceptions = ['touch', 'pointer'];
 
 const except = (exceptions, object) => {
@@ -16,7 +19,6 @@ module.exports = {
 	purge: {
 		content: ['./src/**/*.{html,js,svelte,ts}']
 	},
-	darkMode: 'class',
 	theme: {
 		screens: {
 			min: '200px',
@@ -211,7 +213,7 @@ module.exports = {
 				}
 			},
 			backgroundColor: (theme) => ({
-				main: theme('colors.gray.200'),
+				main: theme('colors.gray.50'),
 				'main-reverse': theme('colors.black')
 			}),
 			textColor: (theme) => ({

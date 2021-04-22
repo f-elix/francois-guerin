@@ -1,8 +1,8 @@
 ::selection {
-	@apply bg-main-reverse text-main-reverse dark:text-main dark:bg-main;
+	@apply bg-main-reverse text-main-reverse;
 }
 ::-moz-selection {
-	@apply bg-main-reverse text-main-reverse dark:text-main dark:bg-main;
+	@apply bg-main-reverse text-main-reverse;
 }
 
 @media screen and (prefers-reduced-motion: reduce), (update: slow) {
