@@ -50,7 +50,7 @@
 		<a
 			href={url}
 			on:click={onOpenModal}
-			class="block relative px-50 overflow-hidden p-40 _focus-default"
+			class="block relative px-50 overflow-hidden p-40 text-center _focus-default"
 			aria-controls={id}
 			><span class="font-bold">{book.title}</span> ({book.releaseYear})
 			<span
