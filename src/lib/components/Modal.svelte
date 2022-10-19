@@ -74,7 +74,7 @@
 		<span class="sr-only">{$site.ui.close}</span>
 	</a>
 	<div
-		class="_modal-content flex flex-col relative w-full max-w-sm mx-auto mt-[25vh] mb-[75vh] py-100 px-150 rounded-30 bg-white-pure"
+		class="_modal-content flex flex-col relative w-full max-w-sm mx-auto mt-[25vh] mb-[120vh] py-100 px-150 rounded-30 bg-white-pure"
 	>
 		<a href={closeUrl} class="self-end _focus-default" on:click={onClose}>
 			<span class="sr-only">{$site.ui.close}</span>
